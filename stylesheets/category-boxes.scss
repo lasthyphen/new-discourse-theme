@@ -147,7 +147,6 @@ Category boxes & other related ephemera
     align-items: baseline;
     color: var(--fg-high-contrast);
     display: inline-flex;
-    font-family: $font-stack;
     font-size: 1.125em;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -167,7 +166,6 @@ Category boxes & other related ephemera
   }
   .description {
     color: var(--fg-low-contrast);
-    font-family: $font-stack;
     font-size: 1em;
     font-weight: 400;
     line-height: 140%;
