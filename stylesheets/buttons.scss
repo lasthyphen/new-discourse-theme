@@ -70,6 +70,12 @@ CSS Mixins
   }
 }
 
+
+.cooked, .d-editor-preview {
+    word-wrap: break-word;
+    line-height: 1.8em;
+}
+
 @mixin border-with-shadow($border-width: 2px) {
   background-color: var(--modal-bg);
   border: $border-width solid rgb(0, 0, 0);
