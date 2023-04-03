@@ -200,7 +200,7 @@ CSS Mixins
 }
 
 .btn-primary {
-  height: 32px;
+  height: 32px !important;
   @include text-button-small(var(--bold-bg), var(--bold-fg));
   &.btn-hover,
   &:hover {
