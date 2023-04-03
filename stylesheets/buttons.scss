@@ -10,12 +10,6 @@ CSS Mixins
 
 
 :root {
-  /*
-  For the most part, names in the color section reflect their UI2 hex 
-  values. Some hex values cannot be reflected accurately as a result of 
-  them having transparency and guidelines of use around specific
-  backgrounds.
-  */
   --blue-tint: #699bf7;
   --coral: #ff8577;
   --golden-yellow: #ffc700;
@@ -26,20 +20,6 @@ CSS Mixins
   --violet-alert: rgba(39,109,246,0.1);
   --red: #f24e1e;
 
-  /*
-  These colors should change if dark mode is on. Their variable names 
-  describe modality: 
-  • bg: background;
-  • fg: foreground;
-  • bold: foreground, high contrast;
-  • modal: foreground, above bg;
-  • surface: background, beneath bg;
-  These are broken up in this way to account for $dark-mode and to
-  allow for broad changes to the color system without effecting the
-  semantics of color choice throughout the theme (e.g. elements that
-  should always appear boldly on the background are separate from the
-  font color we use).
-  */
   --bg: #ffffff;
   --fg-high-contrast: #000000;
   --fg-medium-contrast: #333333;
@@ -50,23 +30,6 @@ CSS Mixins
   --modal-fg: #333333;
   --surface-high-contrast: #d6d6d6;
   --surface-low-contrast: #f5f5f5;
-}
-
-/* Naive dark mode implementation, preserved for future reference
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #1d1d1d;
-      --fg-high-contrast: #ffffff;
-      --fg-medium-contrast: #bbbbbb;
-      --fg-low-contrast: #9b9b9b;
-      --bold-bg: #5551ff;
-      --bold-fg: #ffffff;
-      --modal-bg: #101010;
-      --modal-fg: #ffffff;
-      --surface-high-contrast: #333333;
-      --surface-low-contrast: #262626;
-    }
-  }
 }
 
 @mixin text-button-large($bg: var(--bold-bg), $txt: var(--bold-fg)) {
