@@ -6,6 +6,24 @@
     --tertiary: #232323;
 }
 
+.timeline-container .topic-timeline .timeline-handle {
+    border-radius: .8em;
+    width: .35em;
+    background-color: #424242;
+    height: 100%;
+    float: left;
+    z-index: 2;
+    outline: 1px solid rgba(0,0,0,0);
+    margin-left: .5px;
+}
+.timeline-container .topic-timeline .timeline-scrollarea {
+    margin-top: .5em;
+    margin-left: .5em;
+    border-left: 1px solid #e3e3e3;
+    position: relative;
+    transform: translateZ(0);
+}
+
 /* Inter variable */
 @font-face {
   font-family: "FeyCalibre-Light";
