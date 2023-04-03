@@ -8,7 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "roboto": "assets/roboto.ttf",
+    "Inter-Regular": "assets/roboto.ttf",
     "roboto-bold": "assets/roboto-bold.ttf",
     "roboto-italic": "assets/roboto-italic.ttf"
   },
