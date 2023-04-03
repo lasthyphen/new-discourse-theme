@@ -1,0 +1,182 @@
+/* Inter variable */
+@font-face {
+  font-family: "FeyCalibre-Light";
+  src: url(../assets/fa2e688780748037.p.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 200
+}
+
+@font-face {
+  font-family: "FeyCalibre-Regular";
+  src: url(../assets/69c8001088dcc787.p.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: "FeyCalibre-Bold";
+  src: url(../assets/acd629bf77ed15ef.p.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 600
+}
+
+
+/* This catches any cases in Discourse that aren't covered by the HTML
+tag below */
+$font-stack: "FeyCalibre-Regular", sans-serif;
+
+:root {
+  --heading-font-family: $font-stack;
+  --font-family: $font-stack;
+}
+
+/* Some of these are not broadly supported, but the settings were taken
+from our static marketing site https://www.figma.com/ */
+          /*!sc*/
+html {
+  font-family: 'FeyCalibre-Regular';
+  cursor: default;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*!sc*/
+body {
+  line-height: 1.4;
+  font-weight: 400;
+  color: #0B0B0F;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*!sc*/
+h1,h2,h3,h4,h5,h6 {
+  color: #868F97;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/*!sc*/
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*!sc*/
+h4 {
+  font-size: 16px;
+}
+
+/*!sc*/
+h5 {
+  font-size: 16px;
+}
+
+/*!sc*/
+h6 {
+  font-size: 16px;
+}
+
+/*!sc*/
+button,a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*!sc*/
+a {
+  color: #479FFA;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+/*!sc*/
+p {
+  color: #868F97;
+  line-height: 1.4;
+}
+@mixin boxShadow {
+  // Matched from https://material.io/components/cards/
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin buttonShadow {
+  // Matched from https://material.io/components/buttons/
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+@import "sidebar";
+@import "buttons";
+
+//raise and round buttons
+.btn:not(
+    .sidebar-section-header,
+    .header-sidebar-toggle button,
+    .user-menu-tab
+  ) {
+  border-radius: 4px;
+  @include boxShadow;
+  &.btn-flat.close {
+    box-shadow: none;
+  }
+}
+
+//remove shadow from a few buttons
+.d-editor-button-bar .btn,
+.bulk-select-all,
+.bulk-clear-all,
+.period-chooser-header,
+.topic-map .btn.no-text,
+.badge-section .btn,
+#revision .btn,
+#new-account-link,
+#login-link {
+  box-shadow: none;
+}
+
+// Topic adjustments
+
+.small-action {
+  border-top: none;
+  margin-top: 1em;
+  max-width: 808px;
+  button {
+    margin-left: 1em;
+    background-color: var(--material-lighter-secondary);
+  }
+}
+
+.read-state {
+  right: 1em;
+}
+
+.gap {
+  margin-top: 1em;
+}
+
+.post-notice {
+  border: none;
+  background: transparent;
+  margin-left: 50px;
+  margin-top: 0.75em;
+}
+
+.popup-menu .btn {
+  box-shadow: none;
+}
+
+// Personal messages
+
+.archetype-private_message {
+  .topic-body {
+    box-shadow: none;
+    .cooked {
+      @include boxShadow;
+    }
+  }
+}
