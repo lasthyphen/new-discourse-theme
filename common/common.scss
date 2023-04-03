@@ -41,6 +41,17 @@
     margin: 8px 0px;
 }
 
+.badge-wrapper {
+    font-size: 0.988em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 0.4px;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+}
+
 /* Inter variable */
 @font-face {
   font-family: "FeyCalibre-Light";
