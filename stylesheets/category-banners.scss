@@ -23,7 +23,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -72px;
-                content: url($general-discussion);
+                content: '';
                 height: 180px;
                 width: 282px;
               }
@@ -35,7 +35,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -36px;
-                content: url($product-questions);
+                content: '';
                 height: 140px;
                 width: 215px;
               }
@@ -47,7 +47,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -36px;
-                content: url($product-ideas);
+                content: '';
                 height: 150px;
                 width: 300px;
               }
@@ -64,7 +64,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -56px;
-                content: url($figjam-board);
+                content: '';
                 height: 160px;
                 width: 320px;
               }
@@ -76,7 +76,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -48px;
-                content: url($mobile-beta);
+                content: '';
                 height: 160px;
                 width: 250px;
               }
@@ -92,7 +92,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -38px;
-                content: url($ic-beta);
+                content: '';
                 height: 142px;
                 width: 272px;
               }
@@ -110,7 +110,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -38px;
-                content: url($plugin-api);
+                content: '';
                 height: 136px;
                 width: 284px;
               }
@@ -122,7 +122,7 @@ This file themes the top-bars of Discourse per category.
             position: relative;
             &:after {
                 bottom: -16px;
-                content: url($rest-api);
+                content: '';
                 height: 136px;
                 width: 284px;
               }
