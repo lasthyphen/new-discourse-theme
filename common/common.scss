@@ -115,8 +115,9 @@ a {
 
 /*!sc*/
 p {
-  color: #868F97;
-  line-height: 1.4;
+    color: #707374;
+    line-height: 1.888;
+    font-size: 1.1455em;
 }
 @mixin boxShadow {
   // Matched from https://material.io/components/cards/
@@ -132,6 +133,7 @@ p {
 
 .topic-list-item.visited .topic-list-data a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification) {
     color: #4a4848;
+    font-size: 1.1255em;
 }
 
 //raise and round buttons
