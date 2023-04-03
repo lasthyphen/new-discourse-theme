@@ -189,9 +189,11 @@ CSS Mixins
   display: inline-flex;
   height: 32px;
   padding: 4px 8px;
+  font-size: 1em;
 }
 
 .btn-primary {
+  height: 32px;
   @include text-button-small(var(--bold-bg), var(--bold-fg));
   &.btn-hover,
   &:hover {
