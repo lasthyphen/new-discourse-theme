@@ -30,6 +30,7 @@ CSS Mixins
   --modal-fg: #333333;
   --surface-high-contrast: #d6d6d6;
   --surface-low-contrast: #00000000;
+  --font-0: 1.2em;
 }
 
 @mixin text-button-large($bg: var(--bold-bg), $txt: var(--bold-fg)) {
