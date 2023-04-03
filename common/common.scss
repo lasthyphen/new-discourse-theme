@@ -59,6 +59,14 @@ img.avatar {
     margin: 4px 0px;
 }
 
+.select-kit .select-kit-header {
+    padding: .2em .65em;
+}
+
+.select-kit .select-kit-header:not(.btn) {
+    border-radius: 4px;
+}
+
 .badge-wrapper {
     font-size: 0.988em;
     text-transform: uppercase;
