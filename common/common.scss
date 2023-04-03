@@ -2,6 +2,10 @@
 @import "sidebar";
 @import "buttons";
 
+:root {
+    --tertiary: #232323;
+}
+
 /* Inter variable */
 @font-face {
   font-family: "FeyCalibre-Light";
