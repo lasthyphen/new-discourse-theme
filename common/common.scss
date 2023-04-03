@@ -1,3 +1,25 @@
+@import "colors";
+@import "typography";
+@import "mixins";
+
+@import "admin-settings";
+@import "sidebar";
+@import "buttons";
+@import "empty-state";
+@import "header";
+@import "menu-panels";
+@import "modals";
+@import "panels";
+@import "pikaday";
+@import "footer";
+@import "select-kit";
+@import "topics";
+
+@import "category-banners";
+@import "category-boxes";
+@import "search";
+
+
 /* Inter variable */
 @font-face {
   font-family: "FeyCalibre-Light";
@@ -108,8 +130,9 @@ p {
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-@import "sidebar";
-@import "buttons";
+.topic-list-item.visited .topic-list-data a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification) {
+    color: #4a4848;
+}
 
 //raise and round buttons
 .btn:not(
